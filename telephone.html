@@ -1,0 +1,205 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scottish Innovations</title>
+    <link rel="stylesheet" href="StyleSheet1.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+</head>
+<body>
+    <section id="banner">
+        <nav id="navbar">
+            <img src="Images/logo3.png" class="logo">
+            <ul id="menu">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li class="active">
+                    <a href="#">OUR TOP 5  </a><i class="fa fa-caret-down" aria-hidden="true"></i>
+                                               <ul>
+                                                   <li><a href="dolly.html">CLONING</a></li>
+                                                   <li><a href="tv.html">TELEVISION</a></li>
+                                                   <li><a href="toaster.html">TOASTER</a></li>
+                                                   <li><a href="fridge.html">FRIDGE</a></li>
+                                                   <li><a href="telephone.html">TELEPHONE</a></li>
+                                               </ul>
+                </li>
+                <li>
+                <a href="#">MORE </a><i class="fa fa-caret-down" aria-hidden="true"></i>
+                <ul>
+                    <li><a href="images.html">MORE INVENTIONS</a></li>
+                    <li><a href="learnmore.html">LEARN MORE</a></li>
+                </ul>
+                <li><a href="contact us.html">CONTACT US</a></li>
+                <li><a href="us1.html">OUR TEAM</a></li>
+            </ul>
+        </nav>
+        <div class="banner-text">
+            <h1><u>THE <span class="auto-type"></span></u><br />Alexander Graham bell</h1>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+        <script>
+            var typed = new Typed(".auto-type", {
+                strings: ["TELEPHONE"],
+                typeSpeed: 150,
+                backSpeed: 150,
+                loop: true
+            })
+        </script>
+        <div class="container">
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="Images/bell.jpg"></div>
+                    <div class="swiper-slide"><img src="Images/Telephone1.jpg"></div>
+                    <div class="swiper-slide"><img src="Images/telephone.jpg"></div>
+                    <div class="swiper-slide"><img src="Images/Telephone 2.jpg"></div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+            <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+        </div>
+        <script>
+            const swiper = new Swiper('.swiper', {
+                autoplay: {
+                    delay: 3000,
+                    dispableOnInteraction: false,
+                },
+                loop: true,
+
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });</script>
+    </section>
+    <div id="div1">
+        <video width="100%" controls play>
+            <source src="Images/telephonevid.mp4" type="video/mp4">
+        </video>
+    </div>
+    <style>
+        #div1 {
+            width: 45%;
+            float: left;
+            padding-left: 105px;
+            margin-top: 20px;
+            padding-right: 20px;
+        }
+        /* Share Buttons */
+        .share-btn-container {
+            background: #fff;
+            display: flex;
+            flex-direction: column;
+            padding: 16px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+            position: fixed;
+            top: 80%;
+            transform: translateY(-80%);
+            border-radius: 50%;
+        }
+
+            .share-btn-container a i {
+                font-size: 20px;
+            }
+
+            .share-btn-container a {
+                margin: 12px 0;
+                transition: 500ms;
+            }
+
+                .share-btn-container a:hover {
+                    transform: scale(1.2);
+                }
+
+            .share-btn-container .fa-facebook {
+                color: #3b5998;
+            }
+
+            .share-btn-container .fa-twitter {
+                color: #1da1f2;
+            }
+
+            .share-btn-container .fa-whatsapp {
+                color: #25d366;
+            }
+
+            .share-btn-container .fa-share {
+                color: #fe70bd;
+            }
+    </style>
+    <section>
+        <div>
+            <p class="text">
+                The telephone was invented by <b>Alexander Graham Bell</b>. The story about how the telephone was created is quite interesting, Bell and
+                his partner Thomas Watson were working on a different invention they called “the multiple telegraph”, the purpose of this invention
+                was to send multiple messages over a wire simultaneously but while he was working on this invention there was a malfunction is testing
+                which resulted in what we know now as the telephone, after the malfunction Bell and his partner began working on this new project,
+                shortly after they had their first version of the telephone. On the 7th of March 1876. Bell received his patent for the telephone
+                and only 3 days after the had his first successful call.
+            </p>
+            <p class="text">
+                Bell was born in Edinburgh on the 3rd of March 1847 Alexanders mother was almost deaf and his father taught elocution to the deaf, this influenced Bells later career choice as a teacher to the deaf.
+                When Bell was 11 years old, he entered the Royal High School at Edinburgh, but he didn’t enjoy it, he left school at 15 without
+                graduating and moved to London when he was 18. Getting into the university college London in June 1868 but could unfortunately
+                not complete his studies as Bell and his family emigrated to Canada in 1870.
+            </p>
+            <p class="text">
+                When the telephone first became available to the public some people didn’t react as thrilled as Bell may have hoped, many people who had telephones were afraid of it since
+                it was a new concept to them, and a lot of people were cautious that others would be able to listen in on their conversations.
+                The telephone did have many more positives than negatives when it was first released, such as businesses being able to conduct
+                affairs more efficiently because people were able to talk from greater distances requiring less travel. We can clearly see how
+                big an impact the telephone has had and is still yet to have on daily life today and we can all thank Alexander Graham Bell
+                and Thomas Watson for pursuing that malfunction.
+            </p>
+        </div>
+        <div class="share-btn-container">
+            <a href="https://www.facebook.com//">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://twitter.com/">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.whatsapp.com/">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="https://www.google.co.uk/">
+                <i class="fa fa-share"></i>
+            </a>
+        </div>
+    </section>
+    <script>
+        var navbar = document.getElementById("navbar");
+        var menu = document.getElementById("menu");
+
+        window.onscroll = function () {
+            if (window.pageYOffset >= menu.offsetTop) {
+                navbar.classList.add("sticky");
+            }
+            else {
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
+    <footer style="background-color: #fe70bd; text-align: center;
+    color: #fff; height: 55px; bottom:0;">
+
+        <img style="height: 50px; width: 400px; align-content:center; "
+             src="Images/nabfoot.png" />
+    </footer>
+</body>
+</html>

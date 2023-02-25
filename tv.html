@@ -1,0 +1,269 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scottish Innovations</title>
+    <link rel="stylesheet" href="StyleSheet1.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+</head>
+<body>
+        <nav id="navbar">
+            <img src="Images/logo3.png" class="logo">
+            <ul id="menu">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li class="active">
+                    <a href="#">OUR TOP 5  </a><i class="fa fa-caret-down" aria-hidden="true"></i>
+                                               <ul>
+                                                   <li><a href="dolly.html">CLONING</a></li>
+                                                   <li><a href="tv.html">TELEVISION</a></li>
+                                                   <li><a href="toaster.html">TOASTER</a></li>
+                                                   <li><a href="fridge.html">FRIDGE</a></li>
+                                                   <li><a href="telephone.html">TELEPHONE</a></li>
+                                               </ul>
+                </li>
+                <li>
+                    <a href="#">MORE </a><i class="fa fa-caret-down" aria-hidden="true"></i>
+                    <ul>
+                        <li><a href="images.html">MORE INVENTIONS</a></li>
+                        <li><a href="learnmore.html">LEARN MORE</a></li>
+                    </ul>
+                <li><a href="contact us.html">CONTACT US</a></li>
+                <li><a href="us1.html">CONTACT US</a></li>
+            </ul>
+        </nav>
+        <div class="background-image">
+            <h1><u>THE <br>TELEVISION</u><br>John Logie Baird</h1>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/fYpWYJ3f7Jw" title="YouTube video player"
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+        </div>
+    <script>
+        var navbar = document.getElementById("navbar");
+        var menu = document.getElementById("menu");
+
+        window.onscroll = function () {
+            if (window.pageYOffset >= menu.offsetTop) {
+                navbar.classList.add("sticky");
+            }
+            else {
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
+    <style>
+        .background-image {
+            background: url(https://media.giphy.com/media/l378gpi62P5nyfbSU/giphy.gif);
+            height: 80vh;
+            width: 100%;
+            background-color: #fff;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: #000;
+            margin-top: -20px;
+        }
+        nav {
+            background-image: url(Gallery/covertv.png);
+            width: 100%;
+            background-position: center;
+            background-size: cover;
+        }
+        h1 {
+            color: #000;
+            display: inline;
+            float: left;
+            text-align: left;
+            font-size: 50px;
+            padding-left: 150px;
+            padding-top: 150px;
+        }
+
+        iframe {
+            float: right;
+            padding-top: 20px;
+            padding-right: 70px;
+            margin-top:70px;
+        }
+
+        section1 {
+            position: relative;
+            width: 100%;
+            padding: 50px;
+        }
+
+        .image {
+            position: relative;
+            overflow: hidden;
+        }
+
+            .image.image1 {
+                width: 300px;
+                height: 300px;
+                float: left;
+                border-radius: 50%;
+                margin: 20px;
+                margin-left:50px;
+            }
+
+            .image.image2 {
+                width: 200px;
+                height: 200px;
+                float: right;
+                border-radius: 50%;
+                margin: 20px;
+            }
+
+            footer .image.image3 {
+                width: 300px;
+                height: 300px;
+                float: right;
+                border-radius: 50%;
+                margin: 20px;
+            }
+            .image img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+        section p {
+            text-align: justify;
+            padding: 15px 8%
+        }
+        .image-grid {
+            --gap: 16px;
+            --num-cols: 3;
+            --col-width: 150px;
+            box-sizing: border-box;
+            padding: var(--gap);
+            display: grid;
+            grid-template-columns: repeat(var(--num-cols), 1fr);
+            gap: var(--gap);
+            margin-left:50px;
+            margin-right:50px;
+        }
+
+            .image-grid > img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        /* Share Buttons */
+        .share-btn-container {
+            background: #fff;
+            display: flex;
+            flex-direction: column;
+            padding: 16px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+            position: fixed;
+            top: 80%;
+            transform: translateY(-80%);
+            border-radius: 50%;
+        }
+
+            .share-btn-container a i {
+                font-size: 20px;
+            }
+
+            .share-btn-container a {
+                margin: 12px 0;
+                transition: 500ms;
+            }
+
+                .share-btn-container a:hover {
+                    transform: scale(1.2);
+                }
+
+            .share-btn-container .fa-facebook {
+                color: #3b5998;
+            }
+
+            .share-btn-container .fa-twitter {
+                color: #1da1f2;
+            }
+
+            .share-btn-container .fa-whatsapp {
+                color: #25d366;
+            }
+
+            .share-btn-container .fa-share {
+                color: #fe70bd;
+            }
+
+    </style>
+    <section>
+        <div class="image image1">
+            <img src="Gallery/john-logie-baird-9195738-1-402.jpg">
+        </div>
+        <div class="image image2">
+            <img src="Gallery/OIP.jpg">
+        </div>
+        <div>
+            <p>
+                It is difficult to picture life without your favorite television series. Whether you are a binge
+                watcher or a casual viewer, television is one of the most visible creations of the modern era.
+                Television has become an integral element of many families, with at least one TV in every
+                home. Television teaches us through educational programs and documentaries, informs us
+                about international events and global news, and entertains us with creative productions.
+            </p>
+            <p>
+                When you turn on your 'goggle-box,' remember Scotsman <u>John Logie Baird</u>, the guy responsible
+                for this great innovation. Baird showed the first operational television system in
+                January 1926, and only two years later he completed the first transatlantic television
+                broadcast. Baird dedicated most of his life to television and was also responsible for
+                designing the first color television.
+            </p>
+            <p>
+                <b>Access to International Events:</b><br>Television is a mass media that can keep us up to speed on the latest news, give
+                millions with access to worldwide events, and teach us about numerous cultures and locations throughout the world. Great presentations, whether witnessed by a big audience or an individual, may elicit strong and uplifting emotions.
+            </p>
+            <p>
+                <b>New Perceptions:</b><br>New organizations emerge because of millions of people having access to television, and discussions about social concerns, global movements, and global events begin. Because of the expansion of the Internet and social media platforms, people from all over the world can now communicate their points of view and be exposed to competing ideas.
+            </p>
+        </div>
+        <div class="image image3">
+            <img src="Gallery/tv2.jpg">
+        </div>
+        <div>
+            <p>
+                <b>Global News:</b><br>News channels have the power to reach billions of viewers in real time, giving information and alerting people to events and vital news from both their own nation and throughout the world. Television is more than just a kind of entertainment; it is a vital tool for people to better comprehend the world. Human minds are more intelligent, and we think critically about the world around us, as well as its ongoing changes. Today, we have a broad range of news sources, from television to several types of news acquisition channels such as internet news sites, radio, and newspapers. However, it is apparent that television is a key source of news and has a significant effect on society.
+            </p>
+            <p>
+                <b>Human Knowledge:</b><br>Television not only informs and entertains us, but it also adds to our collective knowledge and education. Documentaries and educational programs offer aesthetically attractive and educational insights into nature, culture, society, the environment, and animals. Many educational programs concentrate on academic disciplines taught in schools, such as mathematics, social studies, and science. Other programs emphasize the development of social skills such as social interactions, imagination, analytical behaviors, and creativity. Educational and prosocial initiatives have been shown to boost cognitive development in youngsters. Children can benefit from well-designed and age-appropriate television shows that have engaging material, understandable language, repetition, and eye-catching images.
+            </p>
+        </div>
+        <div class="image-grid">
+            <img src="Images/Television Image 1.jpg">
+            <img src="Images/Television Image 2.jpg">
+            <img src="https://i.pinimg.com/originals/c8/51/5f/c8515faf8a13964a173ac52dcf2d38f7.gif">
+        </div>
+        <div class="share-btn-container">
+            <a href="https://www.facebook.com//">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://twitter.com/">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.whatsapp.com/">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="https://www.google.co.uk/">
+                <i class="fa fa-share"></i>
+            </a>
+        </div>
+    </section>
+    <footer style="background-color: #fe70bd; text-align: center;
+    color: #fff; height: 55px; bottom:0;">
+       
+                <img style="height: 50px; width: 450px; align-content:center; " 
+                     src="Images/hammadfooter.png" /> 
+    </footer>
+</body>
+</html>

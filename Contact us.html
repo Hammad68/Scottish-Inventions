@@ -1,0 +1,203 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scottish Innovations</title>
+    <link rel="stylesheet" href="StyleSheet1.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+</head>
+<body>
+
+    <nav id="navbar">
+        <img src="Images/logo3.png" class="logo">
+        <ul id="menu">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li>
+                <a href="#">OUR TOP 5  </a><i class="fa fa-caret-down" aria-hidden="true"></i>
+                                           <ul>
+                                               <li><a href="dolly.html">CLONING</a></li>
+                                               <li><a href="tv.html">TELEVISION</a></li>
+                                               <li><a href="toaster.html">TOASTER</a></li>
+                                               <li><a href="fridge.html">FRIDGE</a></li>
+                                               <li><a href="telephone.html">TELEPHONE</a></li>
+                                           </ul>
+            </li>
+            <li>
+                <a href="#">MORE </a><i class="fa fa-caret-down" aria-hidden="true"></i>
+                <ul>
+                    <li><a href="images.html">MORE INVENTIONS</a></li>
+                    <li><a href="learnmore.html">LEARN MORE</a></li>
+                </ul>
+            <li class="active"><a href="contact us.html">CONTACT US</a></li>
+            <li><a href="us1.html">OUR TEAM</a></li>
+        </ul>
+    </nav>
+    <section class="contact">
+        <div class="content">
+            <h2><u>CONTACT FORM</u><br><br></h2>
+            <img style="height:90px; width:80px;" src="Gallery/logo man1.jpg">
+            <p><br>Please feel free to contact us about<br>any queries you may have by filling out the contact form.</p><p><br>Hope to hear from you soon!</p>
+        </div>
+        <div class="container1">
+            <div class="contactinfo">
+                <div class="box">
+                    <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                    <div class="text1">
+                        <h3>Address</h3>
+                        <p>2 Haghill Road,<br>Glasgow,<br>G32 3Sr</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                    <div class="text1">
+                        <h3>Phone Number</h3>
+                        <p>0141 630 5000</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
+                    <div class="text1">
+                        <h3>Email</h3>
+                        <p>scottishinnovations@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contactform">
+                <form>
+                    <h2>Send a Message!</h2>
+                    <div class="inputbox">
+                        <input type="text" name="" required="required">
+                        <span>Full Name</span>
+                    </div>
+                    <div class="inputbox">
+                        <input type="text" name="" required="required">
+                        <span>Email</span>
+                    </div>
+                    <div class="inputbox">
+                        <textarea required="required"></textarea>
+                        <span>Type your message...</span>
+                    </div>
+                    <div class="inputbox">
+                        <input type="submit" name="" value="Send">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <style>
+        body {
+            background-color: #ffc0cb;
+        }
+
+        .contact {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /*flex-direction: column;*/
+            margin-bottom: 50px;
+        }
+
+            .contact .content {
+                max-width: 800px;
+                text-align: center;
+                margin-top: -40px;
+                margin-left: 40px;
+            }
+
+        .container1 {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+        }
+
+            .container1 .contactinfo {
+                width: 40%;
+                display: flex;
+                flex-direction: column;
+                margin-left: 25px;
+            }
+
+                .container1 .contactinfo .box {
+                    position: relative;
+                    padding: 20px 0;
+                    display: flex;
+                }
+
+                    .container1 .contactinfo .box .icon {
+                        min-width: 60px;
+                        height: 60px;
+                        background: #fff;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 50%;
+                    }
+
+                    .container1 .contactinfo .box .text1 {
+                        display: flex;
+                        margin-left: 20px;
+                        flex-direction: column;
+                    }
+
+        .contactform {
+            width: 40%;
+            padding: 40px;
+            background: #fff;
+            border-radius: 5%;
+        }
+
+            .contactform .inputbox {
+                position: relative;
+                width: 100%;
+                margin-top: 10px;
+            }
+
+                .contactform .inputbox input, .contactform .inputbox textarea {
+                    width: 100%;
+                    padding: 5px 0;
+                    margin: 10px 0;
+                    border: none;
+                    border-bottom: 2px solid #ffc0cb;
+                    outline: none;
+                    resize: none;
+                }
+
+                .contactform .inputbox span {
+                    position: absolute;
+                    left: 0;
+                    padding: 5px 0;
+                    margin: 10px 0;
+                    pointer-events: none;
+                    transition: 0.5s;
+                    color: #666;
+                }
+
+                .contactform .inputbox input:focus ~ span,
+                .contactform .inputbox input:valid ~ span,
+                .contactform .inputbox textarea:focus ~ span,
+                .contactform .inputbox textarea:valid ~ span {
+                    color: #e91e63;
+                    transform: translateY(-30px);
+                }
+
+                .contactform .inputbox input[type="submit"] {
+                    width: 100px;
+                    background: #fe70bd;
+                    color: #000;
+                    border: none;
+                    cursor: pointer;
+                    padding: 10px;
+                    border-radius: 50%;
+                }
+                .success{
+                    display:none;
+                }
+    </style>
+</body>
+</html>

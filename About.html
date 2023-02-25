@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scottish Innovations</title>
+    <link rel="stylesheet" href="StyleSheet1.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+</head>
+<body>
+
+    <nav id="navbar">
+        <img src="Images/logo3.png" class="logo">
+        <ul id="menu">
+            <li><a href="index.html">HOME</a></li>
+            <li class="active"><a href="about.html">ABOUT</a></li>
+            <li>
+                <a href="#">OUR TOP 5  </a><i class="fa fa-caret-down" aria-hidden="true"></i>
+                                           <ul>
+                                               <li><a href="dolly.html">CLONING</a></li>
+                                               <li><a href="tv.html">TELEVISION</a></li>
+                                               <li><a href="toaster.html">TOASTER</a></li>
+                                               <li><a href="fridge.html">FRIDGE</a></li>
+                                               <li><a href="telephone.html">TELEPHONE</a></li>
+                                           </ul>
+            </li>
+            <li>
+                <a href="#">MORE </a><i class="fa fa-caret-down" aria-hidden="true"></i>
+                <ul>
+                    <li><a href="images.html">MORE INVENTIONS</a></li>
+                    <li><a href="learnmore.html">LEARN MORE</a></li>
+                </ul>
+            <li><a href="contact us.html">CONTACT US</a></li>
+            <li><a href="us1.html">OUR TEAM</a></li>
+        </ul>
+    </nav>
+    <div1>
+        <img style="float:left; padding: 0 10px 0 0;" src="Gallery/scot inven (1)-removebg-preview.jpg" />
+        <div class="p">
+            <h1 style="color: #fff;"><br>THE WONDERS OF INGENUITY!</h1>
+            <p class="text">
+                <br> Welcome to our website Scottish Innovations! You will see here just how much we love Scottish inventions and
+                we hope you will too! Scots have always had a touch a patriotism and who can blame them, when Scots are known worldwide
+                as the bravest of the brave and having a knack for inventing a thing or two, once in a while. With this interest in 
+                Scottish history, we look to the wonders of Scottish Innovations. It doesn’t matter where you live in the world, 
+                chances are you’ve came by and certainly have come by more than several inventions produced by the lovely Northernly 
+                Scots. With so many widely celebrated and famous inventions, we have decided to dedicate our site to this subject.
+            </p>
+            <p class="text">
+                Many of a great Scot's man has revolutionized the world time after time. With their passion for innovation and 
+                imaginative minds which have produced the world we live in now. From disposable eye contact lenses to haggis,
+                the Scots have blown away the old style of life with penicillin, tidal energy turbines,  the MRI scanner, the
+                telephone and steamboat. The list really does go on and on! It’s pretty fair to say the Scottish inventors,
+                invented the modern world we live in now.
+            </p>
+            <p class="text">
+                Here you will explore some of our favourite inventions and our team have dedicated a page each to our favourite 
+                Scottish Inventions! We believe it’s always important to remember our history and have an appreciation for the 
+                everyday items we use. Can you imagine your life not having a television or using your telephone?  Many daily 
+                chores are sped up exponentially by the hard work and years of development and dedication many inventors have 
+                taken to produce such items.
+            </p>
+        </div>
+    </div1>
+    <script>
+        var navbar = document.getElementById("navbar");
+        var menu = document.getElementById("menu");
+
+        window.onscroll = function () {
+            if (window.pageYOffset >= menu.offsetTop) {
+                navbar.classList.add("sticky");
+            }
+
+            else {
+                navbar.classList.remove("sticky");
+            }
+
+        }
+    </script>
+    <style>
+        body {
+            background-color: #ffc0cb;
+        }
+    </style>
+</body>
+</html>
